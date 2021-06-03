@@ -15,13 +15,13 @@ class Car:
         self.is_police = is_police
         print("Скорость: ", speed)
 
-    @classmethod
-    def go(cls):
+    @staticmethod
+    def go(self):
         # поехали
         return "Поехали"
-
-    @classmethod
-    def stop(cls):
+    
+    @staticmethod
+    def stop(self):
         # остановились
         return "Остановились"
 
