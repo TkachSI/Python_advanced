@@ -7,7 +7,7 @@ def print_date(a):
 
 
 def outher(date):
-    def inner(d):
+    def inner(func):
         print("Время выполнения", datetime.datetime.today()-date)
         d(date)
     return inner
