@@ -2,9 +2,7 @@
 # наибольших двух из них.
 
 def f(*args):
-    q = sorted(args, reverse=True)
-    print(q)
-    print(q[0] + q[1])
+    print(sum(args) - min(args))
 
 
-f(3,1,2,2,2)
+f(3,1,2)
