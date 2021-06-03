@@ -2,15 +2,15 @@ import datetime
 import time
 
 
-def funk3(a):
+def print_date(a):
     print(f"Текущая дата {a}")
 
 
-def func1(date):
-    def funk2(d):
+def outher(date):
+    def inner(d):
         print("Время выполнения", datetime.datetime.today()-date)
         d(date)
-    return funk2
+    return inner
 
 
-func1(datetime.datetime.today())(funk3)
+outher(datetime.datetime.today())(print_date)
